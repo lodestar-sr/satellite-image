@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.float-right {
+  float: right;
+}
+
+/****************************
+  map styles
+*/
+.map-container {
+  height: 100vh;
+  width: 100%;
+}
+
+/****************************
+ sidebar styles
+*/
+.sidebar-container {
+  width: 300px;
+  padding: 20px;
+  background: #f7f7f7;
+  border-left: 1px solid #ddd;
+}
+
+.sidebar-container ul {
+  padding-left: 0;
+}
+.sidebar-container ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  background-color: rgba(128, 128, 128, 0.156);
+  padding: 10px;
+  line-height: 20px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sidebar-container ul li.editing {
+  background-color: rgba(101, 186, 54, 0.156);
+}
+
+.sidebar-container ul li:not(.editing):hover {
+  background-color: rgba(85, 161, 255, 0.607);
+}
+
+.sidebar-container ul li .header {
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.status-satellite.loading {
+  color: rgba(255, 0, 0, 0.719);
+}
+
+.status-satellite.done {
+  color: rgba(9, 130, 7, 0.719);
+}
+
+/****************************
+ button styles
+*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.16rem 0.375rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.btn-warning {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:hover {
+  color: #212529;
+  background-color: #ffca2c;
+  border-color: #ffc720;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
